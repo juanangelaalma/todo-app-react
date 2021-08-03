@@ -88,6 +88,7 @@ code {
   color: black;
   font-family: 'Roboto';
   float: left;
+  margin: 0 0 20px 0;
 }
 
 .form-inline {
@@ -108,12 +109,13 @@ code {
 }
 
 .form-inline button {
-  padding: 10px;
+  padding: 6px;
   background-color: dodgerblue;
   border: 1px solid #ddd;
   color:  white;
   cursor: pointer;
   width: 12%;
+  font-size: 22px;
 }
 .form-inline button:hover {
   background-color: royalblue;
@@ -131,6 +133,18 @@ code {
   font-size: 20px;
 }
 
+.todo-list li img{
+  float: right;
+  display: none;
+  width: 6%;
+  min-width: 15px;
+}
+
+.todo-list li:hover > img {
+  display: block;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .form-inline input {
     width: 100%;
@@ -138,5 +152,14 @@ code {
   }
   .form-inline button {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 70%;
+  }
+  .todo-list li {
+    font-size: 15px;
   }
 }
